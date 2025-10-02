@@ -1,0 +1,96 @@
+/* RESET BÁSICO */
+/* SELECIONA TODOS OS ELEMENTOS DA PAGINA */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CORPO DA PÁGINA */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6; /* ALTURA DO TEXTO */
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #1565c0;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* QUEBRA OS ELEMENTOS SE ELES ESTOURAREM A LINHA */
+  margin: 20px;
+}
+
+/* Menu lateral */
+.menu {
+  flex: 1 1 200px;
+  max-width: 250px;
+  background: #e3f2fd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.menu img {
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: 8px;
+}
+
+.list {
+  list-style: none;
+}
+
+.itemmenu {
+  margin: 10px 0;
+}
+
+.itemmenu a {
+  text-decoration: none;
+  color: #1565c0;
+  font-weight: bold;
+}
+
+.itemmenu a:hover {
+  text-decoration: underline;
+}
+
+/* Conteúdo */
+.conteudo {
+  flex: 3 1 600px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #1565c0;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-top: 10px;
+  color: #333;
+}
+
+p, li {
+  margin-bottom: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .menu {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
